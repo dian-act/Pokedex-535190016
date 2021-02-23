@@ -8,12 +8,14 @@ class Detail extends StatefulWidget {
   String image;
   int weight;
   int height;
+  int baseExperience;
   Detail({
     this.id,
     this.name,
     this.image,
     this.weight,
     this.height,
+    this.baseExperience,
   });
   @override
   _DetailState createState() => _DetailState();
@@ -41,6 +43,7 @@ class _DetailState extends State<Detail> {
       Text("Name : " + pokemonDetail.name),
       Text("Height    : " + pokemonDetail.height.toString() + " dm"),
       Text("Weight    : " + pokemonDetail.weight.toString() + " hg"),
+      Text("Base Experience : " + pokemonDetail.baseExperience.toString()),
     ];
   }
 

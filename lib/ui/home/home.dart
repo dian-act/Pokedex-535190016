@@ -16,8 +16,6 @@ class _HomeState extends State<Home> {
   final ScrollController _scrollController =
       ScrollController(debugLabel: 'pokemonSc');
 
-  String n = '';
-
   @override
   void initState() {
     super.initState();
@@ -40,6 +38,8 @@ class _HomeState extends State<Home> {
       _isLoading = false;
     });
   }
+
+  String n = '';
 
   @override
   Widget build(BuildContext context) {
